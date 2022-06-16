@@ -55,9 +55,7 @@ private fun IndicatorCircle(
     val color = if (checked) Color.Cyan else Color.Gray
     val size = CIRCLE_SIZE * circleScale.scale
     Box(modifier = modifier
-        .padding(
-            horizontal = 4.dp,
-            vertical = ((CIRCLE_SIZE * CircleScale.LARGE.scale - size) / 2).dp)
+        .padding(horizontal = 4.dp)
         .size(size.dp)
         .clip(CircleShape)
         .background(color)

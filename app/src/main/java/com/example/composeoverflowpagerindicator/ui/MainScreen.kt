@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.composeoverflowpagerindicator.ui.old.OverflowPagerIndicator2
 
-private const val MAX_PAGES = 50
+private const val MAX_PAGES = 15
 
 @Composable
 fun MainScreen() {
@@ -51,8 +51,6 @@ fun MainScreen() {
             }
             Spacer(Modifier.height(16.dp))
             OverflowPagerIndicator(numPages = MAX_PAGES, currentPage = page)
-            Spacer(Modifier.height(8.dp))
-//            OverflowPagerIndicator2(numPages = MAX_PAGES, currentPage = page)
         }
     }
 }
